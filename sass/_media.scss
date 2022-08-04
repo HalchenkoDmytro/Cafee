@@ -1,0 +1,83 @@
+@media screen and (max-width: 768px) {
+  .hero {
+    &__content {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+
+  .heading {
+    &--h1 {
+      font-size: 36px;
+    }
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .heading {
+    &--h1 {
+      font-size: 28px;
+    }
+  }
+
+  .products {
+    &__card {
+
+      &--big {
+        flex-basis: 300px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+  .offer {
+    // flex-direction: column-reverse;
+  }
+}
+
+// @media screen and (orientation: landscape) {
+//   .products {
+//     &__card {
+//       flex-basis: 200px;
+//     }
+//   }
+// }
+
+
+
+// @media screen and (min-width: 1440px) {
+//   .bg-image {
+//     background: url(../img/coffee-bg2x.png) no-repeat center/cover;
+//     min-height: calc(340px * 2);
+//   }
+// }
+
+
+// @media screen and (min-width: 2560px) {
+//   .bg-image {
+//     background: url(../img/coffee-bg3x.png) no-repeat center/cover;
+//     min-height: calc(340px * 3);
+//   }
+// }
+
+// @media screen and (resolution: 2x) {
+//   .bg-image {
+//     background: url(../img/coffee-bg2x.png) no-repeat center/cover;
+//   }
+// }
+
+// @media screen and (resolution: 3x) {
+//   .bg-image {
+//     background: url(../img/coffee-bg3x.png) no-repeat center/cover;
+//   }
+// }

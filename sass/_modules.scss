@@ -1,0 +1,72 @@
+.cart {
+  @extend %flex-row-center;
+  gap: 10px;
+
+  &__badge {
+    @extend %flex-row-center;
+    justify-content: center;
+    padding: 3px 6px;
+    background-color: $main-color;
+    color: #fff;
+    border-radius: 9px;
+  }
+}
+
+.button {
+  @include text-style;
+  border: none;
+  line-height: 18px;
+
+
+  &--small {
+    padding: 0 24px;
+  }
+
+  &--medium {
+    padding: 9px 24px;
+  }
+
+  &--large {
+    padding: 18px 24px;
+  }
+
+  &--light {
+    color: $main-color;
+    background: #fff;
+  }
+
+  &--dark {
+    color: #fff;
+    background: $main-color;
+  }
+}
+
+
+.btn-link {
+  @include hover-underline($main-color, 4px, 2.5s);
+  font-size: 15px;
+  color: $secondary-color;
+  position: relative;
+  text-decoration: none;
+}
+
+.form {
+  &__row {
+    display: flex;
+    flex: 1;
+    gap: 10px;
+  }
+
+  &__input {
+    border: 1px solid #2F303E;
+    background: transparent;
+    color: #fff;
+    width: 100%;
+  }
+}
+
+.blog-cards {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 200px;
+}

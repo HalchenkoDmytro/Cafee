@@ -1,0 +1,18 @@
+.menu {
+  &__list {
+    @extend %flex-row-center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+  }
+
+  &__link {
+    @include hover-underline;
+    @include text-style;
+    text-decoration: none;
+    color: $main-color;
+    position: relative;
+    display: block;
+  }
+}

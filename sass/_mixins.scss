@@ -1,0 +1,24 @@
+@mixin hover-underline($color: $secondary-color, $height: 2px, $duration: 1s) {
+  &::after {
+    content: '';
+    width: 0;
+    transition: width $duration;
+    height: $height;
+    background-color: rgba($color, 0.3);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+  }
+
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+@mixin text-style($size: 12px, $transform: uppercase, $spacing: 2px) {
+  text-transform: $transform;
+  font-size: $size;
+  letter-spacing: $spacing;
+}

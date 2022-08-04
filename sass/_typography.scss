@@ -1,0 +1,27 @@
+.heading {
+  font-weight: 400;
+
+  &--h1 {
+    font-size: 47px;
+    line-height: 60px;
+    margin: 10px 0;
+  }
+
+  &--h2 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  &--light {
+    color: #fff;
+  }
+
+}
+
+.caption {
+  @include text-style;
+
+  &--light {
+    color: #fff;
+  }
+}

@@ -1,0 +1,13 @@
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 28px 20px;
+
+  &__menu {
+    @extend %flex-row-center;
+    @extend %flex-row-between;
+  }
+}
